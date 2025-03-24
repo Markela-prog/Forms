@@ -1,27 +1,31 @@
 # Forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+Angular offer 2 main ways of Handling Forms
 
-## Development server
+1) Template-driven Forms
+2) Reactive Forms
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Template-driven
 
-## Code scaffolding
+Setting up forms via components templates
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Easy to get started
+- Implementing more complex logic and forms can be tricky
 
-## Build
+<hr>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+You must add name attribute to the element if using ngModel
 
-## Running unit tests
+`<form #form="ngForm">`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ngForm id - binds form tempalate variable (#form) to an object NgForm, which is created by Angular behind the scenes which containes registered inputs with ngModel
 
-## Running end-to-end tests
+## Reactive Forms
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Setting up forms via TS code
 
-## Further help
+- Setup requires more verbose code
+- Handling more complex forms can be easier
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
