@@ -88,6 +88,8 @@ export class SignupComponent {
       console.log('INVALID FORM');
       return;
     }
+    console.log(this.form);
+    this.form.reset();
   }
 
   onReset() {
